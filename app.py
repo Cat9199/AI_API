@@ -107,6 +107,6 @@ def get_recommendations_summary_df(location_id):
     recommendations = get_recommendations(test_data, location_id)
     df = display_recommendations_summary_df(recommendations)
     return jsonify(df.to_dict())
-
 if __name__ == '__main__':
     app.run(debug=True)
+
